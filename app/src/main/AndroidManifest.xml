@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RFIDapp">
         <activity
+            android:name=".ListproductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CadproductActivity"
+            android:exported="true" />
+        <activity
             android:name=".ListproviderActivity"
             android:exported="true" />
         <activity
