@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RFIDapp">
         <activity
+            android:name=".SellActivity"
+            android:exported="true" />
+        <activity
             android:name=".LogoutActivity"
             android:exported="true" />
         <activity
@@ -20,9 +23,6 @@
             android:exported="true" />
         <activity
             android:name=".WalletActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SellActivity"
             android:exported="true" />
         <activity
             android:name=".BuyActivity"
