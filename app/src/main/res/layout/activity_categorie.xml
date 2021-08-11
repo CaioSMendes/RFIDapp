@@ -36,7 +36,7 @@
             <ImageButton
                 android:layout_width="380dp"
                 android:layout_height="100dp"
-                android:id="@+id/buttonCadcatetgory"/>
+                android:id="@+id/buttonCadcategoria"/>
             <ImageView
                 android:layout_width="380dp"
                 android:layout_height="100dp"
@@ -70,7 +70,7 @@
             <ImageButton
                 android:layout_width="380dp"
                 android:layout_height="100dp"
-                android:id="@+id/buttonCadcatetgory1"/>
+                android:id="@+id/buttonListcategoria"/>
 
             <ImageView
                 android:layout_width="380dp"

@@ -76,7 +76,7 @@
             <ImageButton
                 android:layout_width="380dp"
                 android:layout_height="100dp"
-                android:id="@+id/buttonCadfornecedor1"/>
+                android:id="@+id/buttonListfornecedor"/>
 
             <ImageView
                 android:layout_width="380dp"
