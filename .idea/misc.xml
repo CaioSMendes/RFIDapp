@@ -13,14 +13,15 @@
         <entry key="app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1328125" />
         <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.1328125" />
         <entry key="app/src/main/res/layout/activity_buy.xml" value="0.17391304347826086" />
-        <entry key="app/src/main/res/layout/activity_cadcategory.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_cadcategory.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_cadclient.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_cadproduct.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_cadprovider.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_categorie.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_client.xml" value="0.17391304347826086" />
-        <entry key="app/src/main/res/layout/activity_listcategory.xml" value="0.11854103343465046" />
+        <entry key="app/src/main/res/layout/activity_listcategory.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_listclient.xml" value="0.17028985507246377" />
+        <entry key="app/src/main/res/layout/activity_listproduct.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_listprovider.xml" value="0.12537993920972645" />
         <entry key="app/src/main/res/layout/activity_logout.xml" value="0.17391304347826086" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
