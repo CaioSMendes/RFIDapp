@@ -1,12 +1,11 @@
-package com.example.rfidapp;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.rfidapp.categoria;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.rfidapp.data.network.Categoria;
-import com.example.rfidapp.data.network.JsonPlaceHolderApi;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.rfidapp.R;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

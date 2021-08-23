@@ -1,14 +1,16 @@
-package com.example.rfidapp;
+package com.example.rfidapp.busca;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CadproductActivity extends AppCompatActivity {
+import com.example.rfidapp.R;
+
+public class SearchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadproduct);
+        setContentView(R.layout.activity_search);
     }
 }

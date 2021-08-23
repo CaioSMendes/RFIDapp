@@ -1,9 +1,11 @@
-package com.example.rfidapp;
+package com.example.rfidapp.categoria;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
+
+import com.example.rfidapp.R;
 
 public class ListcategoryActivity extends AppCompatActivity {
 

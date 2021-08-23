@@ -1,14 +1,16 @@
-package com.example.rfidapp;
+package com.example.rfidapp.compra;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ListclientActivity extends AppCompatActivity {
+import com.example.rfidapp.R;
+
+public class BuyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listclient);
+        setContentView(R.layout.activity_buy);
     }
 }

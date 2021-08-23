@@ -6,7 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
+
+import com.example.rfidapp.busca.SearchActivity;
+import com.example.rfidapp.carteira.WalletActivity;
+import com.example.rfidapp.categoria.CategorieActivity2;
+import com.example.rfidapp.cliente.ClientActivity;
+import com.example.rfidapp.compra.BuyActivity;
+import com.example.rfidapp.configuracao.SettingsActivity;
+import com.example.rfidapp.fornecedor.ProviderActivity;
+import com.example.rfidapp.produto.ProductActivity;
+import com.example.rfidapp.venda.SellActivity;
 
 public class MainActivity extends AppCompatActivity {
 

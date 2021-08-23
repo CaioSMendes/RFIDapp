@@ -1,4 +1,4 @@
-package com.example.rfidapp;
+package com.example.rfidapp.produto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.rfidapp.R;
+import com.example.rfidapp.produto.CadproductActivity;
+import com.example.rfidapp.produto.ListproductActivity;
 
 public class ProductActivity extends AppCompatActivity {
 

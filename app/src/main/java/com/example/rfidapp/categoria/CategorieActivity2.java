@@ -1,4 +1,4 @@
-package com.example.rfidapp;
+package com.example.rfidapp.categoria;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.rfidapp.R;
 
 public class CategorieActivity2 extends AppCompatActivity {
 

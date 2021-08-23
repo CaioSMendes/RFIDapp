@@ -1,14 +1,16 @@
-package com.example.rfidapp;
+package com.example.rfidapp.configuracao;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CadclientActivity extends AppCompatActivity {
+import com.example.rfidapp.R;
+
+public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadclient);
+        setContentView(R.layout.activity_settings);
     }
 }

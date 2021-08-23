@@ -1,4 +1,4 @@
-package com.example.rfidapp;
+package com.example.rfidapp.fornecedor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.example.rfidapp.R;
+import com.example.rfidapp.fornecedor.CadproviderActivity;
+import com.example.rfidapp.fornecedor.ListproviderActivity;
 
 public class ProviderActivity extends AppCompatActivity {
 

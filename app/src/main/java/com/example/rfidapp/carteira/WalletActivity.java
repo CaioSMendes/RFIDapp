@@ -1,14 +1,16 @@
-package com.example.rfidapp;
+package com.example.rfidapp.carteira;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SettingsActivity extends AppCompatActivity {
+import com.example.rfidapp.R;
+
+public class WalletActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+        setContentView(R.layout.activity_wallet);
     }
 }
