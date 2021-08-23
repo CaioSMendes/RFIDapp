@@ -3,28 +3,49 @@
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/gradient"
+android:layout_height="wrap_content"
+android:background="@android:color/white"
+android:layout_margin="10dp"
 tools:context=".categoria.ListcategoryActivity">
 
+
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="431dp"
-        android:layout_height="640dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/IDfotoCategoria"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/categorias"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/fundo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/IDlistCategorias"
-        android:layout_width="356dp"
-        android:layout_height="517dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+    <TextView
+        android:id="@+id/IDnomeCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:text="Nome Categoria"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.736" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/IDfotoCategoria"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/IDcodCategoria"
+        android:layout_width="209dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:maxLines="2"
+        android:text="Codigo da Categoria"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/IDfotoCategoria"
+        app:layout_constraintTop_toTopOf="@id/IDnomeCategoria" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
