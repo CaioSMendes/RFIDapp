@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.rfidapp.API.ApiClient;
 import com.example.rfidapp.busca.SearchActivity;
 import com.example.rfidapp.carteira.WalletActivity;
 import com.example.rfidapp.categoria.CategorieActivity2;
@@ -15,7 +17,14 @@ import com.example.rfidapp.compra.BuyActivity;
 import com.example.rfidapp.configuracao.SettingsActivity;
 import com.example.rfidapp.fornecedor.ProviderActivity;
 import com.example.rfidapp.produto.ProductActivity;
+import com.example.rfidapp.response.CategoriaResponse;
 import com.example.rfidapp.venda.SellActivity;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -117,6 +126,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //RETROFIT AQUI --->  QLQR COISA MUDAR
+        Call<List<CategoriaResponse>> categorialist = ApiClient.getCategoriaService().getAllCategories();
 
+        categorialist.enqueue(new Callback<List<CategoriaResponse>>() {
+            @Override
+            public void onResponse(Call<List<CategoriaResponse>> call, Response<List<CategoriaResponse>> response) {
+                if(response.isSuccessful()){
+                    Log.e("success",response.body().toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<CategoriaResponse>> call, Throwable t) {
+                Log.e("fail",t.getLocalizedMessage());
+            }
+        });
     }
 }
