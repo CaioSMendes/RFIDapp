@@ -18,6 +18,9 @@ import com.example.rfidapp.configuracao.SettingsActivity;
 import com.example.rfidapp.fornecedor.ProviderActivity;
 import com.example.rfidapp.produto.ProductActivity;
 import com.example.rfidapp.response.CategoriaResponse;
+import com.example.rfidapp.response.ClienteResponse;
+import com.example.rfidapp.response.FornecedorResponse;
+import com.example.rfidapp.response.ProdutoResponse;
 import com.example.rfidapp.venda.SellActivity;
 
 import java.util.List;
@@ -127,6 +130,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //RETROFIT AQUI --->  QLQR COISA MUDAR
+        //RETROFIT GET
+        //CATEGORIA
+
         Call<List<CategoriaResponse>> categorialist = ApiClient.getCategoriaService().getAllCategories();
 
         categorialist.enqueue(new Callback<List<CategoriaResponse>>() {
@@ -142,5 +148,65 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("fail",t.getLocalizedMessage());
             }
         });
+
+        //RETROFIT AQUI --->  QLQR COISA MUDAR
+        //RETROFIT GET
+        //Produto
+
+        Call<List<ProdutoResponse>> produtolist = ApiClient.getProdutoService().getAllProducts();
+
+        produtolist.enqueue(new Callback<List<ProdutoResponse>>() {
+            @Override
+            public void onResponse(Call<List<ProdutoResponse>> call, Response<List<ProdutoResponse>> response) {
+                if(response.isSuccessful()){
+                    Log.e("success",response.body().toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<ProdutoResponse>> call, Throwable t) {
+                Log.e("fail",t.getLocalizedMessage());
+            }
+        });
+
+        //RETROFIT GET
+        //Fornecedores
+
+        Call<List<FornecedorResponse>> fornecedorlist = ApiClient.getFornecedorService().getAllProviders();
+
+        fornecedorlist.enqueue(new Callback<List<FornecedorResponse>>() {
+            @Override
+            public void onResponse(Call<List<FornecedorResponse>> call, Response<List<FornecedorResponse>> response) {
+                if(response.isSuccessful()){
+                    Log.e("success",response.body().toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<FornecedorResponse>> call, Throwable t) {
+                Log.e("fail",t.getLocalizedMessage());
+            }
+        });
+
+        //RETROFIT GET
+        //Cliente
+
+        Call<List<ClienteResponse>> clientelist = ApiClient.getClienteService().getAllClientes();
+
+        clientelist.enqueue(new Callback<List<ClienteResponse>>() {
+            @Override
+            public void onResponse(Call<List<ClienteResponse>> call, Response<List<ClienteResponse>> response) {
+                if(response.isSuccessful()){
+                    Log.e("success",response.body().toString());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<ClienteResponse>> call, Throwable t) {
+                Log.e("fail",t.getLocalizedMessage());
+            }
+        });
+
+
     }
 }

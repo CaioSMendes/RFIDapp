@@ -1,5 +1,8 @@
 package com.example.rfidapp.API;
 import com.example.rfidapp.services.CategoriaSevice;
+import com.example.rfidapp.services.ClienteService;
+import com.example.rfidapp.services.FornecedorService;
+import com.example.rfidapp.services.ProdutoService;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -28,5 +31,20 @@ public class ApiClient {
         CategoriaSevice categoriaSevice = getRetrofit().create(CategoriaSevice.class);
 
         return categoriaSevice;
+    }
+
+    public static ProdutoService getProdutoService(){
+        ProdutoService produtoService = getRetrofit().create(ProdutoService.class);
+        return produtoService;
+    }
+
+    public static FornecedorService getFornecedorService(){
+        FornecedorService fornecedorService = getRetrofit().create(FornecedorService.class);
+        return fornecedorService;
+    }
+
+    public static ClienteService getClienteService(){
+        ClienteService clienteService = getRetrofit().create(ClienteService.class);
+        return clienteService;
     }
 }
